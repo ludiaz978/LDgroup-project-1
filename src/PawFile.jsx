@@ -91,6 +91,36 @@ const petProfiles = [
     nicknames: ['bird bird', 'handsome'],
     comment: [''],
   }, 
+  {
+    id: 10,
+    image: 'image-url-4.jpg',
+    name: 'Krypto',
+    age: 1,
+    ownerName: 'Michael Clark',
+    hobbies: ['Barking', 'Running Cows', 'Playing with the kids'],
+    nicknames: ['Stop', 'Quit'],
+    comment: [''],
+  },
+  {
+    id: 11,
+    image: 'image-url-4.jpg',
+    name: 'Charlie',
+    age: 1,
+    ownerName: 'Michael Clark',
+    hobbies: ['Wrestling', 'Hunting', 'Chasing anything that moves'],
+    nicknames: ['Dog', 'Char'],
+    comment: [''],
+  },
+  {
+    id: 12,
+    image: 'image-url-4.jpg',
+    name: 'Jake',
+    age: 1,
+    ownerName: 'Michael Clark',
+    hobbies: ['Hide and Seek', 'Biting Toes', 'Attacking the dogs (playfully)'],
+    nicknames: ['Kitty', 'From StateFarm'],
+    comment: [''],
+  },
 ];
 
 function PetProfile({ pet }) {
