@@ -43,7 +43,7 @@ const petProfiles = [
   },
   {
   id: 5,
-    image: 'image-url-5.jpg',
+    image: 'toby.jpg',
     name: 'Toby',
     age: 13,
     ownerName: '',
@@ -53,7 +53,7 @@ const petProfiles = [
   }, 
 {
   id: 6,
-    image: 'image-url-6.jpg',
+    image: 'jersey2.jpg',
     name: 'Jersey',
     age: 10,
     ownerName: '',
@@ -63,7 +63,7 @@ const petProfiles = [
   }, 
 {
    id: 7,
-    image: 'image-url-7.jpg',
+    image: 'reno.jpg',
     name: 'Reno',
     age: 1,
     ownerName: '',
@@ -73,7 +73,7 @@ const petProfiles = [
   }, 
 {
    id: 8,
-    image: 'image-url-8.jpg',
+    image: 'cloud.jpg',
     name: 'Cloud',
     age: 1,
     ownerName: '',
@@ -83,7 +83,7 @@ const petProfiles = [
   }, 
 {
     id: 9,
-    image: 'image-url-9.jpg',
+    image: 'prince.jpg',
     name: 'Prince',
     age: 3,
     ownerName: '',
