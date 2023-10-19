@@ -1,10 +1,8 @@
 import React from 'react';
 import './App.css';
-<<<<<<< Updated upstream
 import Header from './Header';
 import Feed from './Feed'
-function App() {
-=======
+
 
 
 
@@ -94,7 +92,7 @@ function App () {
   designation: "Graphic Designer",
   gender: "male",
   teamName: "TeamD"
-}]);
+});
 
 function handleTeamSelectionChange(event) {
   setTeam(event.target.value);
@@ -107,7 +105,7 @@ function handleEmployeeCardClick(event) {
       setEmployees(transformedEmployees);
   }
  
->>>>>>> Stashed changes
+
   return (
     <div>
       <h3>Profiles of Pets</h3>
