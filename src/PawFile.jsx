@@ -3,7 +3,7 @@ import React from 'react';
 const petProfiles = [
   {
     id: 1,
-    image: 'image-url-1.jpg',
+    image: '/snickers.jpg',
     name: 'Snickers',
     age: 9,
     ownerName: 'Jennie and Chris Megill',
@@ -13,8 +13,8 @@ const petProfiles = [
   },
   {
     id: 2,
-    image: 'image-url-2.jpg',
-    name: 'Moo Moo',
+    image: '/MooMoo.jpg',
+    name: 'MooMoo',
     age: 6,
     ownerName: 'Jennie and Chris Megill',
     hobbies: ['Purring', 'Chasing red dots', 'Being near mom always'],
@@ -123,28 +123,21 @@ const petProfiles = [
   },
 ];
 
-function PetProfile({ pet }) {
+function PawFile() {
   return (
-    <div>
-      <img src={pet.image} alt={pet.name} />
-      <h2>{pet.name}</h2>
-      <p>Age: {pet.age}</p>
-      <p>Owner: {pet.ownerName}</p>
-      <p>Hobbies: {pet.hobbies.join(', ')}</p>
-      <p>Nicknames: {pet.nicknames.join(', ')}</p>
-    </div>
-  );
-}
-
-function App() {
-  return (
-    <div>
-      <h3>Profiles of Four Pets</h3>
+    <div className="paw-file">
       {petProfiles.map((pet) => (
-        <PetProfile key={pet.id} pet={pet} />
+        <div key={pet.id} className="profile">
+          <img src={pet.image} alt={pet.name} />
+          <h2>{pet.name}</h2>
+          <p>Age: {pet.age}</p>
+          <p>Owner: {pet.ownerName}</p>
+          <p>Hobbies: {pet.hobbies.join(', ')}</p>
+          <p>Nicknames: {pet.nicknames.join(', ')}</p>
+        </div>
       ))}
     </div>
   );
 }
 
-export default App;
+export default PawFile;

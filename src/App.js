@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
-import PawFile from './PawFile';
 import Header from './Header';
-import Feed from './Feed';
+import Feed from './Feed'
+
 
 function App() {
   return (
     <div>
-  <Header />
-  <Feed /> 
+      <h3>Profiles of Pets</h3>
+      <Header /> {/* Use Header component here */}
+      <Feed />   {/* Use Feed component here */}
+        {/* You can use PawFile component here if needed */}
     </div>
   );
 }
