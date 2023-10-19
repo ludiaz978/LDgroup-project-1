@@ -3,8 +3,11 @@ import React from "react";
 const petProfiles = [
   {
     id: 1,
-    image: "/snickers.jpg",
-    name: "Snickers",
+
+
+    image: '/Snickers.jpg',
+    name: 'Snickers',
+
     age: 9,
     ownerName: "Jennie and Chris Megill",
     hobbies: [
@@ -27,8 +30,10 @@ const petProfiles = [
   },
   {
     id: 3,
-    image: "image-url-3.jpg",
-    name: "Chicken",
+
+    image: '/Chicken.jpg',
+    name: 'Chicken',
+
     age: 3,
     ownerName: "Jennie and Chris Megill",
     hobbies: [
@@ -41,8 +46,10 @@ const petProfiles = [
   },
   {
     id: 4,
-    image: "image-url-4.jpg",
-    name: "Bo",
+
+    image: '/Bo.jpg',
+    name: 'Bo',
+
     age: 2,
     ownerName: "Jennie and Chris Megill",
     hobbies: ["Collecting straws", "Climbing things", "Sucking his paw"],
