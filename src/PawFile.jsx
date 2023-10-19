@@ -3,7 +3,7 @@ import React from 'react';
 const petProfiles = [
   {
     id: 1,
-    image: '/snickers.jpg',
+    image: '/Snickers.jpg',
     name: 'Snickers',
     age: 9,
     ownerName: 'Jennie and Chris Megill',
