@@ -23,7 +23,7 @@ const petProfiles = [
   },
   {
     id: 3,
-    image: 'image-url-3.jpg',
+    image: '/Chicken.jpg',
     name: 'Chicken',
     age: 3,
     ownerName: 'Jennie and Chris Megill',
@@ -33,7 +33,7 @@ const petProfiles = [
   },
   {
     id: 4,
-    image: 'image-url-4.jpg',
+    image: '/Bo.jpg',
     name: 'Bo',
     age: 2,
     ownerName: 'Jennie and Chris Megill',

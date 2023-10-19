@@ -6,7 +6,7 @@ import './Feed.css'
 function Feed() {
   // Sample pet profiles (you can use your own data)
   const petProfiles = [
-    { id: 1, name: 'Snickers', image: 'snickers.jpg', comment: 'Nice photo!'},
+    { id: 1, name: 'Snickers', image: 'Snickers.jpg', comment: 'Nice photo!'},
     { id: 2, name: 'MooMoo', image: 'MooMoo.jpg', comment: 'Looking good!' },
     { id: 3, name: 'Chicken', image: 'Chicken.jpg', comment: 'Great day for a walk!' },
     { id: 4, name: 'Bo', image: 'Bo.jpg', comment: 'Looks like fun!' },
