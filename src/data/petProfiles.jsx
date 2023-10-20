@@ -115,7 +115,7 @@ const petProfiles = [
       },
       {
         id: 9,
-        profileImage: prince,
+        profileImage: "prince.jpg",
         name: "Prince",
         age: 3,
         ownerName: "",
