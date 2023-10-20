@@ -1,15 +1,20 @@
 import React from 'react';
-import './App.css';
-import Header from './Header';
-import Feed from './Feed'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Feed from '../src/components/Feed'; 
+import Profile from '../src/components/Profile'; 
+import '../src/App.css';
+
 function App() {
   return (
-    <div>
-      <h3>Profiles of Pets</h3>
-      <Header /> {/* Use Header component here */}
-      <Feed />   {/* Use Feed component here */}
-        {/* You can use PawFile component here if needed */}
-    </div>
+    <Router>
+      <div className="App">
+        <h1>Pawfiles</h1>        
+        <Switch>
+          <Route path="/profile/:petId" component={Profile} />
+          <Route exact path="/" component={Feed} /> 
+        </Switch>
+      </div>
+    </Router>
   );
 }
 export default App;
