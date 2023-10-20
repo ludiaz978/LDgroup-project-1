@@ -1,7 +1,7 @@
 import React from "react";
 import prince from "./images/prince.jpg";
 
-function PawFile() {
+function Pawfile() {
   return (
     <div className="paw-file">
       {petProfiles.map((pet) => (
@@ -18,4 +18,4 @@ function PawFile() {
   );
 }
 
-export default PawFile;
+export default Pawfile;

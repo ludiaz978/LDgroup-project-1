@@ -6,6 +6,7 @@ import petProfiles  from '../data/petProfiles';
 
 function Feed() {
   
+
   // Function to generate a random integer
   const getRandomInt = (max) => {
     return Math.floor(Math.random() * Math.floor(max));
