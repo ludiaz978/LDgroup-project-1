@@ -1,4 +1,5 @@
 import React from "react";
+import prince from "./images/prince.jpg";
 
 const petProfiles = [
   {
@@ -98,7 +99,7 @@ const petProfiles = [
   },
   {
     id: 9,
-    image: "prince.jpg",
+    image: prince,
     name: "Prince",
     age: 3,
     ownerName: "",
@@ -143,7 +144,7 @@ function PawFile() {
     <div className="paw-file">
       {petProfiles.map((pet) => (
         <div key={pet.id} className="profile">
-          <img src={pet.image} alt={pet.name} />
+          <img src={`images/${pet.image}`} alt={pet.name} />
           <h2>{pet.name}</h2>
           <p>Age: {pet.age}</p>
           <p>Owner: {pet.ownerName}</p>

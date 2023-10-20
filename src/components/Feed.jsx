@@ -14,7 +14,7 @@ function Feed() {
     { id: 6, name: 'Jersey', image: 'Jersey.jpg', comment: 'So jealous!' },
     { id: 7, name: 'Reno', image: 'Reno.jpg',comment: 'That was a fun day!' },
     { id: 8, name: 'Cloud', image: 'Cloud.jpg', comment: 'I love my humans!' },
-    { id: 9, name: 'Prince', image: 'prince.jpg', comment: 'Thats my bestfriend!' },
+    { id: 9, name: 'Prince', image: 'Prince.jpg', comment: 'Thats my bestfriend!' },
     { id: 10, name: 'Krypto', image: 'Krypto.jpg', comment: 'Lets hangout this week!' },
     { id: 11, name: 'Charlie', image: 'Charlie.jpg', comment: 'I love my siblings!' },
     { id: 12, name: 'Jake', image: 'Jake.jpg', comment: 'Who wants to get lunch?' },
