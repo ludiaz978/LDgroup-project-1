@@ -1,6 +1,7 @@
 import React from 'react';
 import HomeButton from './HomeButton';
 import '../components/Header.css';
+import SearchButton from '../components/SearchButton';
 
 function Header() {
   return (
@@ -8,8 +9,7 @@ function Header() {
       <h1>PetBook</h1>
       <nav>
         <HomeButton />
-        <button>Search</button>
-        <button>Post</button>
+        <SearchButton />
       </nav>
     </header>
   );

@@ -5,6 +5,7 @@ import petProfiles from '../data/petProfiles';
 import './Feed.css';
 import Header from '../components/Header';
 import CommentInput from '../components/CommentInput';
+import PostForm from '../components/PostForm';
 
 function Feed() {
   const feedRef = useRef();
@@ -51,9 +52,25 @@ function Feed() {
     setFeedItemsWithLikes(updatedFeedItems);
   };
 
+  const handlePostSubmit = (newPost) => {
+    const updatedFeedItems = [
+      {
+        id: feedItemsWithLikes.length + 1, // Assign a unique ID
+        profile: newPost,
+        comment: '',
+        userComment: '',
+        likeCount: 0,
+      },
+      ...feedItemsWithLikes,
+    ];
+
+    setFeedItemsWithLikes(updatedFeedItems);
+  };
+
   return (
     <>
       <Header />
+      <PostForm onPostSubmit={handlePostSubmit} />
 
       <div className="feed">
         {feedItemsWithLikes.map(item => (
