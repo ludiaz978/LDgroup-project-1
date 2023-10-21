@@ -1,21 +1,12 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import Comment from '../components/Comment';
 import LikeButton from '../components/LikeButton';
 import petProfiles from '../data/petProfiles';
-import './Feed.css';
 import Header from '../components/Header';
 import CommentInput from '../components/CommentInput';
 import PostForm from '../components/PostForm';
 
 function Feed() {
-  const feedRef = useRef();
-
-  const scrollToTop = () => {
-    if (feedRef.current) {
-      feedRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const [feedItemsWithLikes, setFeedItemsWithLikes] = useState(
     petProfiles.map(pet => ({
       id: pet.id,
@@ -78,7 +69,7 @@ function Feed() {
             <img src={item.profile.image} alt={item.profile.name} />
             <p>{item.profile.name}</p>
             <Comment text={item.comment} />
-            <CommentInput
+            <CommentInput 
               onCommentSubmit={(comment) => handleCommentSubmit(comment, item.id)}
             />
             <p className="user-comment">{item.userComment}</p>

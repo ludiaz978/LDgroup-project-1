@@ -1,0 +1,55 @@
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+
+/* Global styles that apply to both light and dark modes */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Light mode background */
+    color: #000; /* Light mode text color */
+}
+
+/* Toggle button for switching between dark and light modes */
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* For the button in light mode */
+.toggle-button {
+    background-color: #333;
+    color: #fff;
+}
+
+/* For the button in dark mode */
+.dark-mode .toggle-button {
+    background-color: #fff;
+    color: #333;
+}
+
+.app-container {
+    display: flex;
+    background-color: #fff; /* Default background color */
+}
+
+.app-container.dark-mode {
+    background-color: #333; /* Dark mode background */
+    color: #fff; /* Dark mode text color */
+    /* Add other styles for your app-container in dark mode */
+}
+
+.sidebar {
+    width: 200px; /* Adjust the width as needed */
+    background-color: #333; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+    /* Add other styles for your sidebar */
+}

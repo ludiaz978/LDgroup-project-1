@@ -1,12 +1,11 @@
 import React from 'react';
-import HomeButton from './HomeButton';
-import '../components/Header.css';
-import SearchButton from '../components/SearchButton';
+import Sidebar from './Sidebar';
+
 
 function Header() {
   return (
     <header>
-      <h1>PetBook</h1>
+      <h1>Paw-Files</h1>
       <nav>
         <HomeButton />
         <SearchButton />

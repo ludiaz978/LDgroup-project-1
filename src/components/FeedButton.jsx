@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 
-function HomeButton() {
+function FeedButton() {
     const feedRef = useRef();
 
     const scrollToTop = () => {
@@ -14,4 +14,4 @@ function HomeButton() {
     );
 }
 
-export default HomeButton;
+export default FeedButton;

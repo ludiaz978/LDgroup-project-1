@@ -4,6 +4,7 @@ function SearchButton() {
   const [searchVisible, setSearchVisible] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [matches, setMatches] = useState([]);
+  const [customWidgetValue, setCustomWidgetValue] = useState('');
 
   const toggleSearch = () => {
     setSearchVisible(!searchVisible);
@@ -66,6 +67,13 @@ function SearchButton() {
             onChange={(e) => setSearchQuery(e.target.value)}
           />
           <button onClick={handleSearch}>Submit</button>
+          {/* Add your custom widget here */}
+          <input
+            type="text"
+            placeholder="Custom Widget"
+            value={customWidgetValue}
+            onChange={(e) => setCustomWidgetValue(e.target.value)}
+          />
         </div>
       )}
     </div>
