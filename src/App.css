@@ -51,5 +51,13 @@ body {
     width: 200px; /* Adjust the width as needed */
     background-color: #333; /* Dark mode background color */
     color: #fff; /* Dark mode text color */
+    display: flex; /* Change to flex layout */
+    flex-direction: column; /* Align items vertically */
+    justify-content: flex-start; /* Align items to the top (left side) */
     /* Add other styles for your sidebar */
-}
+  }
+
+.pet-image {
+    width: auto-center;
+    height: 350px;
+  }

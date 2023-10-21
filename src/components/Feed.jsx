@@ -66,7 +66,7 @@ function Feed() {
       <div className="feed">
         {feedItemsWithLikes.map(item => (
           <div key={item.id} className="feed-item">
-            <img src={item.profile.image} alt={item.profile.name} />
+            <img src={item.profile.image} alt={item.profile.name} className="pet-image" />
             <p>{item.profile.name}</p>
             <Comment text={item.comment} />
             <CommentInput 

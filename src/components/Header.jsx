@@ -6,10 +6,6 @@ function Header() {
   return (
     <header>
       <h1>Paw-Files</h1>
-      <nav>
-        <HomeButton />
-        <SearchButton />
-      </nav>
     </header>
   );
 }

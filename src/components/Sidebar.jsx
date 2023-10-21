@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import FeedButton from './components/FeedButton';
-// import LikeButton from './components/LikeButton';
-// import HumanprofileButton from './components/HumanprofileButton';
-// import SearchButton from './components/SearchButton';
-// import NewPostButton from './components/NewPostButton';
+import FeedButton from './FeedButton';
+import LikeButton from './LikeButton';
+import HoomanprofileButton from './HoomanprofileButton';
+import SearchButton from './SearchButton';
+import NewPostButton from './NewPostButton';
+
 
 const Sidebar = () => {
   return (
@@ -22,7 +23,7 @@ const Sidebar = () => {
         </li>
         <li>
           <Link to="/profile">
-            <HumanprofileButton label="Profile" icon="user" />
+            <HoomanprofileButton label="Profile" icon="user" />
           </Link>
         </li>
         <li>

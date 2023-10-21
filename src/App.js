@@ -6,9 +6,12 @@ import Pawfile from './components/Pawfile';
 import FeedButton from './components/FeedButton';
 import Sidebar from './components/Sidebar'; 
 import LikeButton from './components/LikeButton';
-import HumanprofileButton from './components/HumanprofileButton';
+import HoomanprofileButton from './components/HoomanprofileButton';
 import SearchButton from './components/SearchButton';
 import NewPostButton from './components/NewPostButton';
+import Hoomanprofiles from './data/Hoomanprofiles';
+import petProfiles from './data/petProfiles';
+
 
 import './App.css';
 
@@ -32,11 +35,11 @@ function App() {
         </Routes>
         
         <div className="buttons">
-          <FeedButton /> {/* Display the buttons here */}
-          <LikeButton />
-          <HumanprofileButton />
-          <SearchButton />
-          <NewPostButton />
+        <FeedButton label="Feed" icon="🏠" />
+        <LikeButton label="Like" icon="❤️" />
+        <HoomanprofileButton label="Profile" icon="👤" />
+        <SearchButton label="Search" icon="🔍" />
+        <NewPostButton label="Create Post" icon="➕" />
         </div>
       </div>
     </Router>
