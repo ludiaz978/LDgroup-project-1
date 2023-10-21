@@ -7,7 +7,7 @@ function Pawfile() {
     <div className="paw-file">
       {petProfiles.map((pet) => (
         <div key={pet.id} className="profile">
-          <img src={'images/prince'} alt={pet.name} />
+          <img src={pet.image} alt={pet.name} />
           <h2>{pet.name}</h2>
           <p>Age: {pet.age}</p>
           <p>Owner: {pet.ownerName}</p>

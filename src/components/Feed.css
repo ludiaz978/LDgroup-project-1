@@ -25,14 +25,16 @@
   }
   
   .like-button {
-    background-color: #1877f2;
+    background-color: #FFBF00;
     color: #fff;
     border: none;
+    width: 25%;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
   }
   
   .like-button:hover {
-    background-color: #1657d0;
+    background-color: #FFBF00;
   }
+

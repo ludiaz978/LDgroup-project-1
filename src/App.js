@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Feed from './Feed';
-import Pawfile from './Pawfile';
+import Feed from './components/Feed';
+import Pawfile from './components/Pawfile';
 
 function App() {
 

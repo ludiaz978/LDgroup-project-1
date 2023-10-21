@@ -1,45 +1,75 @@
-import React from 'react';
-import Comment from './Comment'; 
-import LikeButton from './LikeButton';
+import React, { useRef, useState } from 'react';
+import Comment from '../components/Comment';
+import LikeButton from '../components/LikeButton';
+import petProfiles from '../data/petProfiles';
 import './Feed.css';
-import petProfiles  from '../data/petProfiles';
+import Header from '../components/Header';
+import CommentInput from '../components/CommentInput';
 
 function Feed() {
-  
+  const feedRef = useRef();
 
-  // Function to generate a random integer
-  const getRandomInt = (max) => {
-    return Math.floor(Math.random() * Math.floor(max));
-  };
-
-  // Function to create random feed items
-  const generateRandomFeedItems = (numItems) => {
-    const feedItems = [];
-    for (let i = 0; i < numItems; i++) {
-      const randomProfile = petProfiles[getRandomInt(petProfiles.length)];
-
-      feedItems.push({
-        profile: randomProfile,
-        comment: randomProfile.comment || 'Random comment or like', // Use profile comment if available
-      });
+  const scrollToTop = () => {
+    if (feedRef.current) {
+      feedRef.current.scrollIntoView({ behavior: 'smooth' });
     }
-    return feedItems;
   };
 
-  // Generate random feed items
-  const feedItems = generateRandomFeedItems(100); // Adjust the number of items as needed
+  const [feedItemsWithLikes, setFeedItemsWithLikes] = useState(
+    petProfiles.map(pet => ({
+      id: pet.id,
+      profile: pet,
+      comment: pet.comment || 'Random comment',
+      userComment: '',
+      likeCount: Math.floor(Math.random() * 100), // Generate random like counts
+    }))
+  );
+
+  const handleCommentSubmit = (comment, itemId) => {
+    const updatedFeedItems = feedItemsWithLikes.map(item => {
+      if (item.id === itemId) {
+        return {
+          ...item,
+          userComment: comment,
+        };
+      }
+      return item;
+    });
+    setFeedItemsWithLikes(updatedFeedItems);
+  };
+
+  const handleLike = (itemId) => {
+    const updatedFeedItems = feedItemsWithLikes.map(item => {
+      if (item.id === itemId) {
+        return {
+          ...item,
+          likeCount: item.likeCount + 1,
+        };
+      }
+      return item;
+    });
+    setFeedItemsWithLikes(updatedFeedItems);
+  };
 
   return (
-    <div className="feed">
-      {feedItems.map((item) => (
-        <div key={item.profile.id} className="feed-item">
-          <img src={item.profile.image} alt={item.profile.name} />
-          <p>{item.profile.name}</p>
-          <Comment text={item.comment} /> {/* Render the Comment component */}
-          <LikeButton /> {/* Render the LikeButton component */}
-        </div>
-      ))}
-    </div>
+    <>
+      <Header />
+
+      <div className="feed">
+        {feedItemsWithLikes.map(item => (
+          <div key={item.id} className="feed-item">
+            <img src={item.profile.image} alt={item.profile.name} />
+            <p>{item.profile.name}</p>
+            <Comment text={item.comment} />
+            <CommentInput
+              onCommentSubmit={(comment) => handleCommentSubmit(comment, item.id)}
+            />
+            <p className="user-comment">{item.userComment}</p>
+            <LikeButton onLike={() => handleLike(item.id)} likeCount={item.likeCount} />
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
 
