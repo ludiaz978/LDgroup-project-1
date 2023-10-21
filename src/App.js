@@ -1,18 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Feed from '../src/components/Feed'; 
-import Pawfile from './components/Pawfile'; 
-import '../src/App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Feed from './Feed';
+import Pawfile from './Pawfile';
 
 function App() {
+
   return (
-    <Routes>
-      <div className="App">
-        <h1>Pawfiles</h1>        
-          <Route path="/Pawfile/:petId" component={Pawfile} />
-          <Route exact path="/" component={Feed} /> 
-      </div>
-    </Routes>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Feed />} />
+        <Route path="/pawfile/:petId" element={<Pawfile />} />
+      </Routes>
+    </Router>
   );
+
 }
+
 export default App;
