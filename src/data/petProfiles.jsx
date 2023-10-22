@@ -133,7 +133,7 @@ const petProfiles = [
         hobbies: ["Barking", "Running Cows", "Playing with the kids"],
         nicknames: ["Stop", "Quit"],
         image: "../images/pets/krypto.png",
-        comment: [""],
+        comment: ["I Want To Be A Pirate!!"],
         posts: [
           // More posts
         ],

@@ -12,7 +12,8 @@ function Feed() {
       id: pet.id,
       profile: pet,
       comment: pet.comment || 'Random comment',
-      userComment: '',
+      userComment: '', /* maybe instead of comment we need to rename this bio or something because it is
+                        in the "profile" */
       likeCount: Math.floor(Math.random() * 100), // Generate random like counts
     }))
   );
