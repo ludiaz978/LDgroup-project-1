@@ -61,19 +61,13 @@ function SearchButton() {
       {searchVisible && (
         <div>
           <input
+            className='searchbox'
             type="text"
             placeholder="Search"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
           <button onClick={handleSearch}>Submit</button>
-          {/* Add your custom widget here */}
-          <input
-            type="text"
-            placeholder="Custom Widget"
-            value={customWidgetValue}
-            onChange={(e) => setCustomWidgetValue(e.target.value)}
-          />
         </div>
       )}
     </div>

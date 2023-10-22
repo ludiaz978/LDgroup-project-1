@@ -1,7 +1,10 @@
 import React from 'react';
+import PostForm from './PostForm';
 
-function NewPostButton({ label, icon }) {
-  // ... your component code ...
+function NewPostButton() {
+  return (
+    <button>Post</button>
+  )  
 }
 
 export default NewPostButton;

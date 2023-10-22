@@ -49,7 +49,7 @@ body {
 
 .sidebar {
     position: fixed;
-    width: 150px; /* Adjust the width as needed */
+    width: 220px; /* Adjust the width as needed */
     height: 100%;
     background-color: #333; /* Dark mode background color */
     color: #fff; /* Dark mode text color */
@@ -63,3 +63,15 @@ body {
     width: auto-center;
     height: 350px;
   }
+
+#searchbox {
+    width: 150px;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}

@@ -61,8 +61,6 @@ function Feed() {
 
   return (
     <>
-      <Header />
-      <PostForm onPostSubmit={handlePostSubmit} />
 
       <div className="feed">
         {feedItemsWithLikes.map(item => (

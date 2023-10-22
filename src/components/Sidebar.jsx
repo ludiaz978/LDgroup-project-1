@@ -5,12 +5,17 @@ import LikeButton from './LikeButton';
 import HoomanprofileButton from './HoomanprofileButton';
 import SearchButton from './SearchButton';
 import NewPostButton from './NewPostButton';
+import PostForm from './PostForm';
+import Header from '../components/Header';
 
 
 const Sidebar = () => {
   return (
     <nav className="sidebar">
       <ul>
+
+      <Header />
+
         
           <Link to="/feed">
             <FeedButton label="Feed" icon="home" />
@@ -27,14 +32,10 @@ const Sidebar = () => {
           </Link>
         
         
-          <Link to="/search">
-            <SearchButton label="Search" icon="search" />
-          </Link>
+          <SearchButton />
         
         
-          <Link to="/create-post">
-            <NewPostButton label="Create Post" icon="plus" />
-          </Link>
+          <NewPostButton />
         
         {/* Add more WidgetButton components for other buttons/widgets */}
       </ul>
