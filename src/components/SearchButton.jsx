@@ -26,7 +26,7 @@ function SearchButton() {
     });
 
     foundMatches.forEach(match => {
-      match.scrollIntoView(); 
+      match.scrollIntoView({block: "end"}); 
     });
   };
 
