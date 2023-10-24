@@ -34,13 +34,7 @@ function App() {
           <Route path="/pawfile/:petId" element={<Pawfile />} />
         </Routes>
         
-        <div className="buttons">
-        <FeedButton label="Feed" icon="🏠" />
-        <LikeButton label="Like" icon="❤️" />
-        <HoomanprofileButton label="Profile" icon="👤" />
-        <SearchButton label="Search" icon="🔍" />
-        <NewPostButton label="Create Post" icon="➕" />
-        </div>
+        
       </div>
     </Router>
   );
