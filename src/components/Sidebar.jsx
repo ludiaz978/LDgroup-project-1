@@ -18,24 +18,24 @@ const Sidebar = () => {
 
         
           <Link to="/feed">
-            <FeedButton label="Feed" icon="home" />
+            <FeedButton label="Feed" icon="🏠" />
           </Link>
         
         
           <Link to="/likes">
-            <LikeButton label="Like" icon="heart" />
+            <LikeButton label="Like" icon="❤️" />
           </Link>
         
         
           <Link to="/profile">
-            <HoomanprofileButton label="Profile" icon="user" />
+            <HoomanprofileButton label="Profile" icon="👤" />
           </Link>
         
         
-          <SearchButton />
+          <SearchButton label="Search" icon="🔍" />
         
         
-          <NewPostButton />
+          <NewPostButton label="Post" icon="➕" />
         
         {/* Add more WidgetButton components for other buttons/widgets */}
       </ul>

@@ -61,7 +61,7 @@ function SearchButton() {
 
   return (
     <div className="search-bar">
-      <button onClick={toggleSearch}>Search</button>
+      <button onClick={toggleSearch}>🔍Search</button>
       {searchVisible && (
         <div>
           <input

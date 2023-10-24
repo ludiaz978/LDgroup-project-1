@@ -3,7 +3,7 @@ import PostForm from './PostForm';
 
 function NewPostButton() {
   return (
-    <button>Post</button>
+    <button>➕Post</button>
   )  
 }
 
