@@ -11,6 +11,7 @@ import SearchButton from './components/SearchButton';
 import NewPostButton from './components/NewPostButton';
 import Hoomanprofiles from './data/Hoomanprofiles';
 import petProfiles from './data/petProfiles';
+import PostForm from './components/PostForm';
 
 
 import './App.css';
@@ -32,6 +33,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Feed />} />
           <Route path="/pawfile/:petId" element={<Pawfile />} />
+          <Route path="/new-post" element={<PostForm />} />
         </Routes>
         
         

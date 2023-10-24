@@ -35,7 +35,10 @@ const Sidebar = () => {
           <SearchButton label="Search" icon="🔍" />
         
         
+          <Link to="/new-post"> 
           <NewPostButton label="Post" icon="➕" />
+        </Link>
+
         
         {/* Add more WidgetButton components for other buttons/widgets */}
       </ul>

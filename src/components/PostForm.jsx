@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 function PostForm({ onPostSubmit }) {
+  const navigate = useNavigate(); // Initialize navigate
   const [imageUrl, setImageUrl] = useState('');
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
@@ -20,10 +22,15 @@ function PostForm({ onPostSubmit }) {
     setImageUrl('');
     setName('');
     setDescription('');
+
+    // After submitting the post, navigate back to the main feed (or any other desired route)
+    navigate('/'); // Redirect to the main feed route
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    
+    <form onSubmit={handleSubmit} className='centered-form'>
+      <h1>Post to feed!!</h1>
       <div>
         <label htmlFor="image">Image URL:</label>
         <input
