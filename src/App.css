@@ -49,7 +49,7 @@ body {
 
 .sidebar {
     position: fixed;
-    width: 220px; /* Adjust the width as needed */
+    width: 220px; 
     height: 100%;
     background-color: #333; /* Dark mode background color */
     color: #fff; /* Dark mode text color */
@@ -58,6 +58,10 @@ body {
     justify-content: flex-start; /* Align items to the top (left side) */
     /* Add other styles for your sidebar */
   }
+
+button {
+    display: block;
+}
 
 .pet-image {
     width: auto-center;

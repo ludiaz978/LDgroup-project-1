@@ -25,11 +25,15 @@ function SearchButton() {
       }
     });
 
-    setMatches(foundMatches);
+    foundMatches.forEach(match => {
+      match.scrollIntoView(); 
+    });
   };
 
   useEffect(() => {
     if (matches.length > 0) {
+      //on the first match scroll to the element position
+
       matches.forEach((match) => {
         const textNodes = [];
         const walker = document.createTreeWalker(match, NodeFilter.SHOW_TEXT, null, false);
