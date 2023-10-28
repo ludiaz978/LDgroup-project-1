@@ -5,7 +5,6 @@ import LikeButton from './LikeButton';
 import HoomanprofileButton from './HoomanprofileButton';
 import SearchButton from './SearchButton';
 import NewPostButton from './NewPostButton';
-import PostForm from './PostForm';
 import Header from '../components/Header';
 
 
@@ -17,7 +16,7 @@ const Sidebar = () => {
       <Header />
 
         
-          <Link to="/feed">
+          <Link to="/">
             <FeedButton label="Feed" icon="🏠" />
           </Link>
         
