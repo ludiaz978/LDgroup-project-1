@@ -2,21 +2,19 @@ import React, { useState } from 'react';
 import Comment from '../components/Comment';
 import LikeButton from '../components/LikeButton';
 import petProfiles from '../data/petProfiles';
-import Header from '../components/Header';
 import CommentInput from '../components/CommentInput';
-import PostForm from '../components/PostForm';
 
-function Feed() {
-  const [feedItemsWithLikes, setFeedItemsWithLikes] = useState(
-    petProfiles.map(pet => ({
-      id: pet.id,
-      profile: pet,
-      comment: pet.comment || 'Random comment',
-      userComment: '', /* maybe instead of comment we need to rename this bio or something because it is
-                        in the "profile" */
-      likeCount: Math.floor(Math.random() * 100), // Generate random like counts
-    }))
-  );
+const Feed = ({ feedItemsWithLikes, setFeedItemsWithLikes }) => {
+  // const [feedItemsWithLikes, setFeedItemsWithLikes] = useState(
+  //   petProfiles.map(pet => ({
+  //     id: pet.id,
+  //     profile: pet,
+  //     comment: pet.comment || 'Random comment',
+  //     userComment: '', /* maybe instead of comment we need to rename this bio or something because it is
+  //                       in the "profile" */
+  //     likeCount: Math.floor(Math.random() * 100), // Generate random like counts
+  //   }))
+  // );
 
   const handleCommentSubmit = (comment, itemId) => {
     const updatedFeedItems = feedItemsWithLikes.map(item => {
@@ -44,20 +42,20 @@ function Feed() {
     setFeedItemsWithLikes(updatedFeedItems);
   };
 
-  const handlePostSubmit = (newPost) => {
-    const updatedFeedItems = [
-      {
-        id: feedItemsWithLikes.length + 1, // Assign a unique ID
-        profile: newPost,
-        comment: '',
-        userComment: '',
-        likeCount: 0,
-      },
-      ...feedItemsWithLikes,
-    ];
+  // const handlePostSubmit = (newPost) => {
+  //   const updatedFeedItems = [
+  //     {
+  //       id: feedItemsWithLikes.length + 1, // Assign a unique ID
+  //       profile: newPost,
+  //       comment: '',
+  //       userComment: '',
+  //       likeCount: 0,
+  //     },
+  //     ...feedItemsWithLikes,
+  //   ];
 
-    setFeedItemsWithLikes(updatedFeedItems);
-  };
+  //   setFeedItemsWithLikes(updatedFeedItems);
+  // };
 
   return (
     <>
